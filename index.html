@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Smart.Store</title>
+	<link rel="stylesheet" href="CSS/Estilos/Template.css">
+	<link rel="stylesheet" href="CSS/Estilos/Index.css">
+	<link rel="stylesheet" href="CSS/Menu.css" />
+	<link rel="stylesheet" href="CSS/Slide.css">
+	<link rel="stylesheet" href="CSS/Login.css">
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+	<script src="JS/prefixfree.min.js"></script>
+	<script src="JS/modernizr.custom.js"></script>
+</head>
+<body class="cbp-spmenu-push">
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+		<h3>Menu Principal</h3>
+		<a onClick="abrir()">Login</a> 
+		<ul>
+			<h2>Cliente</h2>
+			<li><a href="Modulo_Compra.html">Comprar</a></li>
+		</ul>
+		<ul>
+			<h2>Administrador</h2>
+			<li><a href="#">Consultar</a></li>
+			<li><a href="#">Modificar</a></li>
+			<li><a href="#">Eliminar</a></li>
+		</ul>
+		<ul>
+			<h2>Fabricante</h2>
+			<li><a href="#">Publicar</a></li>
+			<li><a href="#">Consultar</a></li>
+			<li><a href="#">Modificar</a></li>
+		</ul>
+		<a id="showLeft-2" >Cerrar Menu</a>
+	</nav>
+	<header>
+		<div><img id="showLeft" src="IMG/logo.png" height="90" width="109" alt=""></div>
+		<div><h1>Smart{Tech}.Store</h1>	</div>
+	</header>
+	<!--   LOGIN   -->
+	<script src="JS/EjecutarLogin.js"></script>
+	<div id="fondot" onClick="cerrar()"> 
+	</div> 
+	<div id="contenido" class="loginform cf">
+		<a id="cierro" onClick="cerrar()"></a> 
+		<form name="login" action="#" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail">Correo</label>
+					<input type="email" name="usermail" placeholder="correo@email.com" required>
+				</li>
+				<li>
+					<label for="password">Password</label>
+					<input type="password" name="password" placeholder="password" required>
+				</li>
+				<li>
+					<input type="submit" value="Iniciar Sesion">
+				</li>
+			</ul>
+		</form>
+	</div>
+	<!--   LOGIN   -->	
+	<div id="container">
+		<section id="space"><p>Una Nueva forma de ver la Tecnologia!</p></section>
+		<section class="sliderIm">
+			<ul class="rslides" id="slider1">
+				<li><img src="IMG/slide1.jpg" alt=""></li>
+				<li><img src="IMG/slide2.jpg" alt=""></li>
+				<li><img src="IMG/slide3.jpg" alt=""></li>
+				<li><img src="IMG/slide4.jpg" alt=""></li>
+				<li><img src="IMG/slide5.jpg" alt=""></li>
+			</ul>
+		</section>
+		<section class="vendedores">
+			<h2>Nuestros Vendedores</h2>
+			<article>
+				<p>
+					<img src="IMG/logo-Huawei.png" height="140" width="160" alt=""><br>
+					Es una empresa privada de alta tecnología que se especializa en investigación y desarrollo (I+D), producción y marketing de equipamiento de comunicaciones y provee soluciones de redes personalizadas para operadores de la industria de telecomunicaciones.
+				</p><br>
+				<input name="voto" type="button" value="Mas Info" />
+			</article>
+			<article>
+				<p>
+					<img src="IMG/samsung_Logo.png" height="80" width="170" alt=""><br><br><br><br>
+					Samsung es una empresa lider en la industria electrónica, su departamento de telefonia mobil fabrica los telefonos inteligentes mas famosos del mercado, sus dispositivos son conocidos por su gran calidad, alto rendimiento y fiabilidad, manteniendo un precio competitivo.
+				</p><br>
+				<input name="voto" type="button" value="Mas Info" />
+			</article>
+			<article>
+				<p>
+					<img src="IMG/motorola.png" height="120" width="170" alt=""><br><br>
+					Es una empresa especializada en la electrónica y las telecomunicaciones, establecida en Schaumburg, Illinois. En 2011 Motorola fue dividida en dos firmas independientes una de la otra. Motorola es una de las empresas con mas experiencia en el mercado mobil.
+				</p><br>
+				<input name="voto" type="button" value="Mas Info" />
+			</article>
+			<article>
+				<p>
+					<img src="IMG/alcatel_logo.png" height="100" width="170" alt=""><br><br><br>
+					Es una multinacional, fusión de la francesa Alcatel y la estadounidense Lucent Technologies. La empresa provee hardware, software y servicios para proveedores de servicios de telecomunicaciones y empresas. Se destaca en dispositvos economicos y de calidad.
+				</p><br>
+				<input name="voto" type="button" value="Mas Info" />
+			</article>
+	</section>
+	<section class="publi">
+		<h2>CyanogenMod</h2><br>
+		<article>
+			<img src="IMG/publi2.png"><br>
+			<p>CyanogenMod es un firmware no oficial disponible para más de ochenta teléfonos móviles y tabletas basados en el sistema operativo de código abierto Android. Ofrece características que no se encuentran en las versiones oficiales basadas en Android suministradas por los fabricantes.CyanogenMod asegura que sus modificaciones mejoran el rendimiento y la fiabilidad frente a las versiones oficiales del software. De acuerdo con sus desarrolladores, CyanogenMod no contiene spyware o bloatware.</p>
+		</article>
+	</section>
+	<section id="space"><p>Sitio Diseñado por Juan David Joya</p></section>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="JS/EjecutarMenu.js"></script>
+<script src="JS/responsiveslides.min.js"></script>
+<script src="JS/EjecutarSlider.js"></script>
+</body>
+</html>

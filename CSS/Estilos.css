@@ -1,7 +1,9 @@
 /**/
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
 /**/
+/*
 @font-face {
   font-family: 'open_sans';
   src: url('../Fonts/OpenSans-Regular-webfont.eot');
@@ -12,6 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 @font-face {
   font-family: 'icomoon';
   src:url('../Fonts/Iconos/icomoon.eot?8na2sk');
@@ -46,7 +49,7 @@
 }
 
 body{
-  background-color:#1a1a1a;
+  background-color:#222;
   color:white;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 16px;
@@ -55,7 +58,7 @@ body{
   overflow-x: hidden;
 }
 
-/*..........Header Inicio..........*/
+/*..........Header ..........*/
 header{
   background:url(../IMG/Fondo1.png);
   background-color:#f2f2f2;
@@ -63,6 +66,7 @@ header{
   padding:0;
   margin:0;
   position: relative;
+  user-select: none;
 }
 
 header .MenuResponsive{
@@ -123,6 +127,7 @@ header div .icon-SignUp:hover{
 header div .icon-LogIn{
   background:#0079C2;
 }
+
 header div .icon-LogIn:hover{
   background: #00BAF0;
 }
@@ -131,6 +136,7 @@ header .UserLink div a{
   color:white;
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
+  outline:0;/*moz*/
 }
 
 @media screen and (max-width:768px){
@@ -147,6 +153,7 @@ header .UserLink div a{
     padding: 6px;
   }
 }
+
 @media screen and (max-width:500px){
   header{
     text-align: left;
@@ -184,14 +191,24 @@ header .UserLink div a{
   header .UserLink div a{
     display:none;
   }
-  #login{
-    text-align: left;
+  body .login{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+  }
+  .login input{
+    display:block;
+    margin:0.5em auto;
+  }
+  .login input[type="submit"]{
+    width:12em;
   }
 }
+/*.......End.Header .......*/
 
-/*..........login Inicio.........*/
+/*--    -Login-    --*/
 .login{
-  background:#d2d2d2;
+  background:#A9A9A9;
   display: none;
   padding: 0.7em;
   text-align: right;
@@ -204,116 +221,156 @@ header .UserLink div a{
   padding: 0.2em 0.6em;
 }
 
+.login input:focus {
+    border: 1px solid #E64A3D;
+} 
+
 .login input[type="submit"]{
   background: #e64a3d;
   border-color: #e64a3d;
   color: white;
 }
-
+/*--  End-Login   --*/
 
 #container{
   margin:0;
   padding:0;
   text-align: center;
-  width:100%;
 }
-#space p{
-  width:100%;
-  padding:10px;
+
+.space{
+  background:#D2D2D2;
+}
+
+.space, .space h2{
   margin:0;
+  padding:0;
 }
 
-
-
-@media screen and (max-width:500px){
-  .vendedores:nth-child(3) h2{
-    font-size:1.8em; 
-    padding:0px;
-  }
-  .publi:nth-child(4) h2{
-    font-size:1.8em; 
-    padding:0px;
-  }
+.space h2{
+  color:black;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
+.vendedores h2{ color: #DCDCDC;}
 
-.sliderIm ul{
-  width:100%;
-  margin:auto;
+.publi h2{ color: white;}
+
+.publi h2, .vendedores h2{
+  font-size: 3em;
+  margin:0;
+  padding:0;
+  text-shadow: 5px 5px 20px black;
 }
+
 .vendedores, .publi{
   padding-bottom: 30px;
   padding-top: 30px;
-  width:100%;
 }
+
+/*---------- Vendedores ----------*/
+.vendedores{
+  background-color: #222;
+}
+
 .vendedores article{
-  font-size: 1.15em;
+  background:#1a1a1a;
+  font-family: 'Roboto';
+  font-size: 0.9em;
   border-radius: 15px;
-  color:white;
   display: inline-block;
-  margin:20px 10px;
-  min-height: 400px;
+  margin:2% 1% 0 1%;
   min-width: 350px;
-  padding:10px;
-  text-align: justify;
+  padding:0.8em 0.8em 1.2em 0.8em;
   vertical-align: top;
   width:20%;
-  transition: all 0.2s linear;
 }
-.publi article{
-  font-size: 1.2em;
-  color:black;
-  display: inline-block;
-  margin:20px 10px;
-  min-height: 400px;
-  min-width: 350px;
-  padding:10px;
+
+.vendedores article p{
   text-align: justify;
-  width:85%;
 }
-.publi img{ display:block;margin: auto;}
-.vendedores article img{
-  border-radius: 8px;
-  display:block;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  margin:auto;
-  transition: all 0.4s linear;
+
+.vendedores article div{
+  display:inline-block;
 }
-.vendedores article:hover{
-  transform:scale(1.04,1.04);
+
+.vendedores article div figure{
+  display:inline-block;
+  margin:0.5em;
 }
-.vendedores article img:hover{
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+
+.vendedores article div figure img{
+  width:80px;
 }
-.sliderIm:nth-child(2) {background-color:black;} 
-.vendedores:nth-child(3){background-color: #1a1a1a;}
-.publi:nth-child(4) {background-color:#ffc43a;} 
+
+.vendedores article div h3{
+  display:inline-block;
+  margin:.5em 0;
+  vertical-align:top;
+  font-size: 2.5em;
+  font-family: 'Oswald'
+}
+
 article input{
-  font-family: 'open_sans', sans-serif;
-  font-size: 1em;
-  background-color: #ffc43a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  background-color: #0099c2;
+  border-radius: 2px;
   border-width: 0;
   display:block;
-  height:50px;
+  height:40px;
   margin:auto;
-  width:200px;
+  width:150px;
+  transition:0.3s;
 }
+
 article input:hover{
-  color:white;
+  background:#0079C2;
 }
-.publi img{
-  max-width: 50%;
-  height: auto;
+
+/*-------End Vendedores ----------*/
+
+/*---------Publicidad-------------*/
+.publi{
+  /*background-color:#808080;*/
+  background:#0099c2;
+} 
+
+.publi article img{ 
+  max-width: 70%;
+  border-radius:0.5em;
+  text-align: center;
 }
-.publi h2, .vendedores h2{
-  font-family: 'open_sans';
-  font-size: 3.5em;
-  margin:0;
-  padding:15px;
-  text-shadow: 5px 5px 20px black;
-  transition: all 0.4s linear;
+.publi article p{
+  text-align: justify;
+  border-radius: 0.3em;
+  color:black;
+  padding:.3em;
+  font-size: 1.2em;
+ }
+
+.publi article{
+  display:inline-block;
+  margin:1em 0;
+  min-width: 350px;
+  padding:0.7em;
+  width:85%;
 }
-.publi h2{color:white;}
-.vendedores h2{color:#ffc43a;}
+
+/*-------End Publicidad-----*/
+
+@media screen and (max-width:450px){
+  #container .vendedores h2{
+    font-size:1.8em; 
+    padding:0px;
+  }
+  .publi article, .vendedores article{
+    min-width: 290px;
+  }
+  #container .publi h2{
+    font-size:1.8em; 
+    padding:0px;
+  }
+}

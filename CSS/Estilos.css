@@ -67,6 +67,7 @@ header{
   margin:0;
   position: relative;
   user-select: none;
+  overflow: hidden;
 }
 
 header .MenuResponsive{
@@ -101,7 +102,7 @@ header .UserLink{
   position:absolute;
   top:0;
   right:0;
-  margin: 0 -4.2em 0px 0px;
+  margin: 0 -4.3em 0px 0px;
   transition:0.4s;
 }
 
@@ -223,6 +224,7 @@ header .UserLink div a{
 
 .login input:focus {
     border: 1px solid #E64A3D;
+    outline:0;/*Chrome*/
 } 
 
 .login input[type="submit"]{

@@ -222,6 +222,7 @@ header .UserLink div a{
   max-height: 2em;
   padding: 0.7em;
 }
+
 .login-expanded-2{
   max-height: 7em;
 }
@@ -267,23 +268,15 @@ header .UserLink div a{
   font-size: 1em;
 }
 
-.vendedores h2{ 
+.sistemas h2, .vendedores h2, .compras h2{
   color: #DCDCDC;
-}
-
-.sistemas h2{ 
-  color: white;
-  font-style: italic;
-}
-
-.sistemas h2, .vendedores h2{
   font-size: 2.5em;
   margin:0;
   padding:0;
   text-shadow: 2px 2px 5px black;
 }
 
-.vendedores, .sistemas{
+.vendedores, .sistemas, .compras{
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -295,7 +288,7 @@ header .UserLink div a{
 
 .vendedores article{
   background:#1a1a1a;
-  border-radius: 15px;
+  border-radius: .8em;
   display: inline-block;
   margin:2% 1% 0 1%;
   min-width: 350px;
@@ -305,7 +298,7 @@ header .UserLink div a{
 }
 
 .vendedores article:hover p{
-  color:#2ECC71;
+  color:white;
   transform:scale(1.1,1.1);
 }
 
@@ -338,10 +331,10 @@ header .UserLink div a{
   font-family: 'Oswald'
 }
 
-article input{
+.vendedores article input{
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.1em;
-  background-color: #0099c2;
+  background-color: #7FBA00;
   border-radius: 2px;
   border-width: 0;
   display:block;
@@ -349,22 +342,25 @@ article input{
   margin:auto;
   width:150px;
   transition:0.3s;
+  outline:0;/*Chrome*/
 }
 
-article input:hover{
-  background:#0079C2;
+.vendedores article input:hover{
+  background: #5c8800;
 }
 
 /*-------End Vendedores ----------*/
 
 /*---------Publicidad-------------*/
 .sistemas{
-  background:#0099c2;
-  /*background-color:#808080;*/
+  background: #454545;
+  /*background:#0099c2;*/
+  /*background:#808080;*/
 } 
 
 .sistemas article{
-  background: #008AAE;
+  background: #545557;
+  /*background: #008AAE;*/
   /*background: #666666;*/
   border-radius:0.5em;
   display:inline-block;
@@ -382,13 +378,25 @@ article input:hover{
 }
 
 .sistemas article p{
+  opacity: .8;
+  background: #606164;
+  /*background:#00BAF0; */
+  padding:0;
+  margin:0 0 .2em 0;
+  border-top:white solid 1px;
+ }
+
+ .sistemas article p a{
+  text-decoration: none;
   font-size: 2.2em;
   font-family: 'Oswald';
   text-shadow: 1px 1px 1px #000;
   color:white;
-  padding:0;
-  margin:0 0 .2em 0;
-  border-top:white solid 1px;
+  transition:0.3s;
+ }
+
+ .sistemas article p a:hover{
+  color:#a1ef00;
  }
 
 /*-------End Publicidad-----*/
@@ -402,7 +410,66 @@ article input:hover{
     font-size:1.5em; 
     padding:0 0 .5em 0;
   }
+  #container .compras h2{
+    font-size:1.5em; 
+    padding:0 0 .5em 0;
+  }
   .sistemas article, .vendedores article{
     min-width: 290px;
   } 
+}
+
+/*---------Modulo Compra---------------*/ 
+.compras {
+  background: #222;
+}
+.compras article {
+  border-radius: .5em;
+  background: #1a1a1a;
+  display: inline-block;
+  margin:1% 0.5%;
+  padding-bottom: .8em;
+  min-width: 250px;
+  vertical-align: top;
+  width: 10%;
+  transition: all 0.2s linear;
+}
+
+.compras article figure{
+  border-radius: .5em;
+  display:block;
+  margin:1em auto;
+}
+
+.compras article figure img{
+  width: 115px;
+  height: 150px;
+}
+
+.compras article ul{
+  list-style:none;
+}
+
+.compras article div ul li{
+  font-size: 1em;
+  color: white;
+  text-align: justify;
+}
+
+.compras article input{
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1em;
+  background-color: #7FBA00;
+  border-radius: 2px;
+  border-width: 0;
+  display:block;
+  height:30px;
+  margin:auto;
+  width:120px;
+  transition:0.3s;
+  outline:0;/*Chrome*/
+}
+
+.compras article input:hover{
+  background: #5c8800;
 }

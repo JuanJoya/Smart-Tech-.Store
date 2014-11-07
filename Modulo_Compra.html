@@ -3,16 +3,117 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>Store -> Compras</title>
+	<title>Store.Compras</title>
 	<script src="JS/prefixfree.min.js"></script>
-	<script src="JS/modernizr.custom.js"></script>
 	<link rel="stylesheet" href="CSS/normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="CSS/Estilos/Template.css">
-	<link rel="stylesheet" href="CSS/Estilos/Compra.css">
-	<link rel="stylesheet" href="CSS/Menu.css" />
+	<link rel="stylesheet" href="CSS/animate.min.css">
+	<link rel="stylesheet" href="CSS/Estilos.css">
 </head>
-<body class="cbp-spmenu-push">
+<body>
+	<header>
+		<div class="MenuResponsive icon-MenuLogo"></div>
+		<div><img src="IMG/logo.png"></div>
+		<div><h1>Smart{Tech}.Store</h1></div>
+		<div class="UserLink">
+			<div class="icon-SignUp"> <a href="#">Sign Up</a></div>
+		    <div id="mostrar-form" class="icon-LogIn"> <a id="mostrar-form" href="#">Log In</a></div>
+	    </div>
+	</header>
+	<!--   Login   -->
+	<div class="login" id="login">
+		<form action="#" method="" >
+			<input type="email" id="user" placeholder="Correo" required>
+			<input type="password" id="pass" placeholder="Contraseña" required>
+			<input type="submit" value="Ok">
+		</form>
+	</div>
+	<!--  End-Login   -->
+	<div id="container">
+		<section class="space"><h2>Una Nueva forma de ver la Tecnologia!</h2></section>
+		<section class="compras">
+			<h2 class="Title_1">Dispositivos en Venta</h2>
+			<article>
+				<figure>
+					<img src="IMG/moto-x.png">
+				</figure>
+				<div>
+					<ul>
+						<li>Modelo: Moto G</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 400.000 COP</li>
+					</ul>
+				</div>
+				<input type="button" value="Mas Info" />
+			</article>
+			<article>
+				<figure>
+					<img src="IMG/moto-x-2.png">
+				</figure>
+				<div>
+					<ul>
+						<li>Modelo: Moto X</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 900.000 COP</li>
+					</ul>
+				</div>
+				<input type="button" value="Mas Info" />
+			</article>
+			<article>
+				<figure>
+					<img src="IMG/moto-x.png">
+				</figure>
+				<div>
+					<ul>
+						<li>Modelo: Moto G</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 400.000 COP</li>
+					</ul>
+				</div>
+				<input type="button" value="Mas Info" />
+			</article>
+			<article>
+				<figure>
+					<img src="IMG/moto-x-2.png">
+				</figure>
+				<div>
+					<ul>
+						<li>Modelo: Moto X</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 900.000 COP</li>
+					</ul>
+				</div>
+				<input type="button" value="Mas Info" />
+			</article>
+			<article>
+				<figure>
+					<img src="IMG/moto-x.png">
+				</figure>
+				<div>
+					<ul>
+						<li>Modelo: Moto G</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 400.000 COP</li>
+					</ul>
+				</div>
+				<input type="button" value="Mas Info" />
+			</article>
+			<article>
+				<figure>
+					<img src="IMG/moto-x-2.png">
+				</figure>
+				<div>
+					<ul>
+						<li>Modelo: Moto X</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 900.000 COP</li>
+					</ul>
+				</div>
+				<input type="button" value="Mas Info" />
+			</article>
+		</section>
+		<section class="space"><h2><a href="index.html">Volver!</a></h2></section>
+	</div>
+	<!-- 
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
 		<h3>Menu Principal</h3>
 		<ul>
@@ -34,66 +135,8 @@
 		</ul>
 		<a id="showLeft-2" >Cerrar Menu</a>
 	</nav>
-	<header>
-		<div><img id="showLeft" src="IMG/logo.png"></div>
-		<div><h1>Smart{Tech}.Store</h1>	</div>
-	</header>
-	<div id="container">
-		<section id="space"><p>Una Nueva forma de ver la Tecnologia!</p></section>
-		<section class="compras">
-			<h2>Celulares en Venta</h2>
-			<article>
-				<img src="IMG/moto-x.png" height="200" width="150" alt="">
-				<br>
-				<p>
-					El Moto X posee una pantalla AMOLED 720p de 4.7 pulgadas, procesador dual-core Snapdragon S4 Pro, 2GB de RAM, 16GB o 32GB de almacenamiento interno, y corre Android 4.2.2 Jelly Bean.
-				</p><br>
-				<input name="voto" type="button" value="Mas Info" />
-			</article>
-			<article>
-				<img src="IMG/moto-x-2.png" height="200" width="150" alt="">
-				<br>
-				<p>
-					El Moto X posee una pantalla AMOLED 720p de 4.7 pulgadas, procesador dual-core Snapdragon S4 Pro, 2GB de RAM, 16GB o 32GB de almacenamiento interno, y corre Android 4.2.2 Jelly Bean.
-				</p><br>
-				<input name="voto" type="button" value="Mas Info" />
-			</article>
-			<article>
-				<img src="IMG/moto-x.png" height="200" width="150" alt="">
-				<br>
-				<p>
-					El Moto X posee una pantalla AMOLED 720p de 4.7 pulgadas, procesador dual-core Snapdragon S4 Pro, 2GB de RAM, 16GB o 32GB de almacenamiento interno, y corre Android 4.2.2 Jelly Bean.
-				</p><br>
-				<input name="voto" type="button" value="Mas Info" />
-			</article>
-			<article>
-				<img src="IMG/moto-x-2.png" height="200" width="150" alt="">
-				<br>
-				<p>
-					El Moto X posee una pantalla AMOLED 720p de 4.7 pulgadas, procesador dual-core Snapdragon S4 Pro, 2GB de RAM, 16GB o 32GB de almacenamiento interno, y corre Android 4.2.2 Jelly Bean.
-				</p><br>
-				<input name="voto" type="button" value="Mas Info" />
-			</article>
-			<article>
-				<img src="IMG/moto-x.png" height="200" width="150" alt="">
-				<br>
-				<p>
-					El Moto X posee una pantalla AMOLED 720p de 4.7 pulgadas, procesador dual-core Snapdragon S4 Pro, 2GB de RAM, 16GB o 32GB de almacenamiento interno, y corre Android 4.2.2 Jelly Bean.
-				</p><br>
-				<input name="voto" type="button" value="Mas Info" />
-			</article>
-			<article>
-				<img src="IMG/moto-x.png" height="200" width="150" alt="">
-				<br>
-				<p>
-					El Moto X posee una pantalla AMOLED 720p de 4.7 pulgadas, procesador dual-core Snapdragon S4 Pro, 2GB de RAM, 16GB o 32GB de almacenamiento interno, y corre Android 4.2.2 Jelly Bean.
-				</p><br>
-				<input name="voto" type="button" value="Mas Info" />
-			</article>
-		</section>
-		<section id="space"><p>Sitio Diseñado por Juan David Joya</p></section>
-	</div>
-	<script src="js/classie.js"></script>
-	<script src="JS/EjecutarMenu.js"></script>
+	-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="JS/LogIn.js"></script>
 </body>
 </html>

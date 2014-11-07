@@ -31,5 +31,4 @@ $("#caja1").hover(function () {
 });
 */
 
-$("#Title_1").addClass("animated bounceInLeft");
-$("#Title_2").addClass("animated bounceInLeft");
+$(".Title_1").addClass("animated bounceInLeft");

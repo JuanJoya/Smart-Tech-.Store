@@ -62,7 +62,6 @@ body{
 header{
   background:url(../IMG/Fondo1.png);
   background-color:#f2f2f2;
-  width:100%;
   padding:0;
   margin:0;
   position: relative;
@@ -107,7 +106,7 @@ header .UserLink{
 }
 
 header .UserLink:hover{
-    margin-right: 0;
+  margin-right: 0;
 }
 
 header .UserLink div{
@@ -194,37 +193,31 @@ header .UserLink div a{
   }
   body .login{
     padding:0;
-    margin:0;
-    overflow:hidden;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    opacity: .9;
+    top: 54px;
   }
   .login input{
     display:block;
+    width: 70%;
     margin:0.5em auto;
   }
   .login input[type="submit"]{
-    width:12em;
+    width: 75%;
   }
 }
 /*.......End.Header .......*/
 
 /*--    -Login-    --*/
 .login{
-  max-height:0;
-  height: auto;
+  padding: .5em;
+  display: none;
   background:#A9A9A9;
   overflow: hidden;
   text-align: right;
-  transition: all 0.2s linear;
-  padding: 0;
-}
-
-.login-expanded{
-  max-height: 2em;
-  padding: 0.7em;
-}
-
-.login-expanded-2{
-  max-height: 7em;
+  z-index: 2;
 }
 
 .login input{
@@ -277,8 +270,7 @@ header .UserLink div a{
 }
 
 .vendedores, .sistemas, .compras{
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 1.8em 0;
 }
 
 /*---------- Vendedores ----------*/
@@ -290,11 +282,11 @@ header .UserLink div a{
   background:#1a1a1a;
   border-radius: .8em;
   display: inline-block;
-  margin:2% 1% 0 1%;
-  min-width: 350px;
+  margin:1%;
+  width: 350px;
   padding:0.8em 0 1.2em 0;
   vertical-align: top;
-  width:20%;
+  /*width:20%;*/
 }
 
 .vendedores article:hover p{
@@ -334,7 +326,7 @@ header .UserLink div a{
 .vendedores article input{
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.1em;
-  background-color: #7FBA00;
+  background-color: #454545;
   border-radius: 2px;
   border-width: 0;
   display:block;
@@ -359,15 +351,15 @@ header .UserLink div a{
 } 
 
 .sistemas article{
-  background: #545557;
+  background: #222;
   /*background: #008AAE;*/
   /*background: #666666;*/
   border-radius:0.5em;
   display:inline-block;
   margin:1%;
-  min-width: 350px;
+  width: 300px;
   padding:0;
-  width:25%;
+  /*width: 15%*/
   vertical-align: top;
 }
 
@@ -378,12 +370,13 @@ header .UserLink div a{
 }
 
 .sistemas article p{
-  opacity: .8;
-  background: #606164;
-  /*background:#00BAF0; */
+  opacity: 0.8;
+  background: #1A1A1A;
   padding:0;
   margin:0 0 .2em 0;
   border-top:white solid 1px;
+  border-bottom-right-radius:1em;
+  border-bottom-left-radius:1em;
  }
 
  .sistemas article p a{
@@ -391,7 +384,7 @@ header .UserLink div a{
   font-size: 2.2em;
   font-family: 'Oswald';
   text-shadow: 1px 1px 1px #000;
-  color:white;
+  color:#DCDCDC;
   transition:0.3s;
  }
 
@@ -404,7 +397,7 @@ header .UserLink div a{
 @media screen and (max-width:500px){
   #container .vendedores h2{
     font-size:1.8em; 
-    padding:0px;
+    padding:0;
   }
   #container .sistemas h2{
     font-size:1.5em; 
@@ -415,7 +408,7 @@ header .UserLink div a{
     padding:0 0 .5em 0;
   }
   .sistemas article, .vendedores article{
-    min-width: 290px;
+    width: 290px;
   } 
 }
 
@@ -429,9 +422,9 @@ header .UserLink div a{
   display: inline-block;
   margin:1% 0.5%;
   padding-bottom: .8em;
-  min-width: 250px;
+  width: 250px;
   vertical-align: top;
-  width: 10%;
+  /*width: 10%;*/
   transition: all 0.2s linear;
 }
 

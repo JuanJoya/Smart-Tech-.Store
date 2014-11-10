@@ -2,33 +2,21 @@
 var $form = $('#login'),
 	$user = $('#user'),
 	$pass = $('#pass'),
-	$button = $('#mostrar-form');
+	$button = $('#mostrar-form'),
+	$Title = $(".Title_1");
 
-// Eventos
-/*
-$button.click( mostrarFormulario );
-
-function mostrarFormulario(){
-	$form.slideToggle('fast','linear');
-	return false;
-}
-*/
-
-$button.on('click', function () {
-	if($form.width()>500)
-	{
-		$form.toggleClass('login-expanded');
-	}
-	else
-	{
-		$form.toggleClass('login-expanded-2');
-	}
-    
-});
+//Animate.css
+$Title.addClass("animated bounceInLeft");
 /*
 $("#caja1").hover(function () {
     $(this).toggleClass("animated bounceInLeft");
 });
 */
+//Eventos
+$button.on('click', function () {
 
-$(".Title_1").addClass("animated bounceInLeft");
+	$form.slideToggle('fast','linear');
+	//$form.toggleClass('login-expanded-2');
+	return false;
+	
+});

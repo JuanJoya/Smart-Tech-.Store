@@ -51,7 +51,7 @@
 body{
   background-color:#222;
   color:white;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'open_sans', arial;
   font-size: 16px;
   margin:0;
   padding:0;
@@ -92,7 +92,7 @@ header div img:hover{
 
 header div h1{
   color:#e64a3d;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', arial;
   font-size: 3em;
   margin:0;
 }
@@ -111,7 +111,7 @@ header .UserLink:hover{
 
 header .UserLink div{
   display:block;
-  font-size: 1.2em;
+  font-size: 1.22em;
   padding: 9.7px;
   transition:0.4s;
 }
@@ -132,92 +132,28 @@ header div .icon-LogIn:hover{
   background: #00BAF0;
 }
 
-header .UserLink div a{
+header .UserLink div span{
   color:white;
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
+  font-family: 'Oswald', arial;
+  cursor:pointer;
   outline:0;/*moz*/
-}
-
-@media screen and (max-width:768px){
-  header div img{
-    width: 55px;
-  }
-  header div h1{
-    font-size: 2.5em;
-  }
-  header .UserLink{
-    margin-top:0;
-  }
-  header .UserLink div{
-    padding: 6px;
-  }
-}
-
-@media screen and (max-width:500px){
-  header{
-    text-align: left;
-  }
-  header div img{
-    display:none;
-  }
-  header .MenuResponsive{
-    color:black;
-    content:"";
-    display:inline;
-    font-size: 1.5em;
-    margin-left: 10px;
-    transition:0.3s;
-  }
-  header .MenuResponsive:hover{
-    color:#e64a3d;
-  }
-  header div h1{
-    font-size: 1.5em;
-    color:#1FA4E5;
-  }
-  header .UserLink{
-    margin:.2em 0;
-  }
-  header .UserLink div{
-    background:none;
-    display:inline-block;
-    color:black;
-  }
-  header .UserLink div:hover{
-    color:#e64a3d;
-    background:none;
-  }
-  header .UserLink div a{
-    display:none;
-  }
-  body .login{
-    padding:0;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    opacity: .9;
-    top: 54px;
-  }
-  .login input{
-    display:block;
-    width: 70%;
-    margin:0.5em auto;
-  }
-  .login input[type="submit"]{
-    width: 75%;
-  }
 }
 /*.......End.Header .......*/
 
-/*--    -Login-    --*/
+/*------    -Login-    ----*/
 .login{
-  padding: .5em;
+  font-family: 'Archivo Narrow', arial;
+  box-sizing: border-box;
+  padding:1.2em;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: 97px;
   display: none;
   background:#A9A9A9;
   overflow: hidden;
   text-align: right;
-  z-index: 2;
+  z-index: 20;
 }
 
 .login input{
@@ -256,30 +192,59 @@ header .UserLink div a{
 
 .space h2{
   color:black;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Archivo Narrow', arial;
   font-weight: 400;
   font-size: 1em;
 }
 
+.space a{
+  font-style: italic;
+  text-decoration: none;
+  color: #FF0000;
+}
+
 .sistemas h2, .vendedores h2, .compras h2{
-  color: #DCDCDC;
   font-size: 2.5em;
   margin:0;
   padding:0;
-  text-shadow: 2px 2px 5px black;
+}
+
+.vendedores h2{
+  color:#e64a3d;
+}
+
+.sistemas h2, .compras h2{
+   color: #DCDCDC;
+}
+
+.vendedores h3{
+  padding:0;
+  margin:0;
+}
+
+.vendedores h3 span{
+  padding:0;
+  margin:0;
+  font-family: 'Oswald';
+  font-size: .8em;
+  color:#e64a3d;
+  cursor: pointer;
 }
 
 .vendedores, .sistemas, .compras{
+  font-family: 'Archivo Narrow', arial;
   padding: 1.8em 0;
 }
 
 /*---------- Vendedores ----------*/
 .vendedores{
-  background-color: #222;
+  /*background-color: #222;*/
+  background:#f0eeee;
 }
 
 .vendedores article{
-  background:#1a1a1a;
+  /*background:#1a1a1a;*/
+  background:#d8d6d6;
   border-radius: .8em;
   display: inline-block;
   margin:1%;
@@ -296,7 +261,7 @@ header .UserLink div a{
 
 .vendedores article p{
   transition: 0.4s;
-  font-family: 'Archivo Narrow';
+  font-family: 'Archivo Narrow', arial;
   font-size: 1.3em;
   font-style:italic; 
   text-align: center;
@@ -324,7 +289,7 @@ header .UserLink div a{
 }
 
 .vendedores article input{
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Archivo Narrow', arial;
   font-size: 1.1em;
   background-color: #454545;
   border-radius: 2px;
@@ -338,9 +303,8 @@ header .UserLink div a{
 }
 
 .vendedores article input:hover{
-  background: #5c8800;
+  background: #00c5b9;
 }
-
 /*-------End Vendedores ----------*/
 
 /*---------Publicidad-------------*/
@@ -371,12 +335,9 @@ header .UserLink div a{
 
 .sistemas article p{
   opacity: 0.8;
-  background: #1A1A1A;
   padding:0;
   margin:0 0 .2em 0;
-  border-top:white solid 1px;
-  border-bottom-right-radius:1em;
-  border-bottom-left-radius:1em;
+  border-top:#00c5b9 solid 1px;
  }
 
  .sistemas article p a{
@@ -389,28 +350,10 @@ header .UserLink div a{
  }
 
  .sistemas article p a:hover{
-  color:#a1ef00;
+  color:#00c5b9;
  }
-
 /*-------End Publicidad-----*/
 
-@media screen and (max-width:500px){
-  #container .vendedores h2{
-    font-size:1.8em; 
-    padding:0;
-  }
-  #container .sistemas h2{
-    font-size:1.5em; 
-    padding:0 0 .5em 0;
-  }
-  #container .compras h2{
-    font-size:1.5em; 
-    padding:0 0 .5em 0;
-  }
-  .sistemas article, .vendedores article{
-    width: 290px;
-  } 
-}
 
 /*---------Modulo Compra---------------*/ 
 .compras {
@@ -450,7 +393,7 @@ header .UserLink div a{
 }
 
 .compras article input{
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Archivo Narrow', arial;
   font-size: 1em;
   background-color: #7FBA00;
   border-radius: 2px;
@@ -465,4 +408,91 @@ header .UserLink div a{
 
 .compras article input:hover{
   background: #5c8800;
+}
+
+
+/*------------Responsive Design ----------*/
+@media screen and (max-width:768px){
+  header div img{
+    width: 55px;
+  }
+  header div h1{
+    font-size: 2.5em;
+  }
+  header .UserLink{
+    margin-top:0;
+  }
+  header .UserLink div{
+    padding: 6px;
+  }
+  body .login{
+    top: 82px;
+  }
+}
+
+@media screen and (max-width:500px){
+  header{
+    text-align: left;
+  }
+  header div img{
+    display:none;
+  }
+  header .MenuResponsive{
+    color:black;
+    content:"";
+    display:inline;
+    font-size: 1.5em;
+    margin-left: 10px;
+    transition:0.3s;
+  }
+  header .MenuResponsive:hover{
+    color:#e64a3d;
+  }
+  header div h1{
+    font-size: 1.5em;
+    color:#1FA4E5;
+  }
+  header .UserLink{
+    margin:.2em 0;
+  }
+  header .UserLink div{
+    background:none;
+    display:inline-block;
+    color:black;
+  }
+  header .UserLink div:hover{
+    color:#e64a3d;
+    background:none;
+  }
+  header .UserLink div span{
+    display:none;
+  }
+  body .login{
+    padding:0;
+    opacity: .9;
+    top: 54px;
+  }
+  .login input{
+    display:block;
+    width: 70%;
+    margin:0.5em auto;
+  }
+  .login input[type="submit"]{
+    width: 75%;
+  }
+  #container .vendedores h2{
+    font-size:1.8em; 
+    padding:0;
+  }
+  #container .sistemas h2{
+    font-size:1.5em; 
+    padding:0 0 .5em 0;
+  }
+  #container .compras h2{
+    font-size:1.5em; 
+    padding:0 0 .5em 0;
+  }
+  .sistemas article, .vendedores article{
+    width: 290px;
+  } 
 }

@@ -4,26 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Smart.Store</title>
-	<script src="JS/prefixfree.min.js"></script>
-	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/animate.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" data-noprefix>
+	<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css" data-noprefix>
+	<link rel="stylesheet" href="CSS/animate.min.css" data-noprefix>
+	<link rel="stylesheet" href="CSS/normalize.css" data-noprefix>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="stylesheet" href="CSS/Estilos.css">
-	<link rel="stylesheet" href="CSS/SliderStyles.css">
+	<link rel="stylesheet" href="CSS/pushy.css">
 	<!--[if lt IE 9]>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-	<header>
-		<div class="MenuResponsive icon-MenuLogo"></div>
-		<div><img src="IMG/logo.png"></div>
+	<header class="push">
+		<div class="MenuResponsive icon-MenuLogo menu-btn"></div>
+		<div><img class="menu-btn" src="IMG/menu.png"></div>
 		<div><h1>Smart{Tech}.Store</h1></div>
 		<div class="UserLink">
 			<div id="show-signup" class="icon-SignUp"> <span>Sign Up</span></div>
 		    <div id="show-login" class="icon-LogIn"> <span>Log In</span></div>
 	    </div>
 	</header>
+
 	<!--   Login   -->
 	<div class="login" id="login">
 		<form action="#" method="" >
@@ -33,46 +36,79 @@
 		</form>
 	</div>
 	<!--  End-Login   -->
+
+	<!-- Menu -->
+    <nav class="pushy pushy-left">
+    	<div class="menu-title">
+    		Menu Principal
+    	</div>
+    	<div class="menu-items">
+	    	<ul>
+	            <li><a href="#">Item 1</a></li>
+	            <li><a href="#">Item 2</a></li>
+	            <li><a href="#">Item 3</a></li>
+	            <li><a href="#">Item 4</a></li>
+	            <li><a href="#">Item 5</a></li>
+	            <li><a href="#">Item 6</a></li>
+	        </ul>
+    	</div>
+        <div class="menu-user-data">
+        	<figure>
+        		<img src="IMG/user-img.jpg">
+        	</figure>
+        	<ul>
+        		<li>Ing.JuanJoya</li>
+        		<li>Developer</li>
+        		<li>Colombia</li>
+        	</ul>
+        </div>
+    </nav>
+	<!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <!-- End Menu -->
+	
 	<div id="container">
 		<section class="space"><h2>Una Nueva forma de ver la Tecnologia!</h2></section>
+
 		<!--   Slider Main   -->
 		<section class="slider-section">
-		<div class="slider-container">
-			<ul id="slider" class="slider-wrapper">
-				<li class="slide-current">
-					<img src="IMG/slide1.jpg">
-					<div class="caption">
-						<h3 class="caption-title">Surface Pro 3</h3>
-						<p>Una portátil en forma de tablet.</p>
-					</div>
-				</li>
-				<li>
-					<img src="IMG/slide2.jpg">
-					<div class="caption">
-						<h3 class="caption-title">Iphone 6</h3>
-						<p>Mucho mas que Grande.</p>
-					</div>
-				</li>
-				<li>
-					<img src="IMG/slide3.jpg">
-					<div class="caption">
-						<h3 class="caption-title">Galaxy Note 4</h3>
-						<p>Más de lo que imaginas.</p>
-					</div>
-				</li>
-				<li>
-					<img src="IMG/slide4.jpg">
-					<div class="caption">
-						<h3 class="caption-title">Lumia</h3>
-						<p>La familia Lumia tiene lo adecuado para ti.</p>
-					</div>
-				</li>
-			</ul>
-			<!-- Controles -->
-			<ul id="slider-controls" class="slider-controls"></ul>
-		</div>
+			<div class="slider-container">
+				<ul id="slider" class="slider-wrapper">
+					<li class="slide-current">
+						<img src="IMG/slide1.jpg">
+						<div class="caption">
+							<h3 class="caption-title">Surface Pro 3</h3>
+							<p>Una portátil en forma de tablet.</p>
+						</div>
+					</li>
+					<li>
+						<img src="IMG/slide2.jpg">
+						<div class="caption">
+							<h3 class="caption-title">Iphone 6</h3>
+							<p>Mucho mas que Grande.</p>
+						</div>
+					</li>
+					<li>
+						<img src="IMG/slide3.jpg">
+						<div class="caption">
+							<h3 class="caption-title">Galaxy Note 4</h3>
+							<p>Más de lo que imaginas.</p>
+						</div>
+					</li>
+					<li>
+						<img src="IMG/slide4.jpg">
+						<div class="caption">
+							<h3 class="caption-title">Lumia</h3>
+							<p>La familia Lumia tiene lo adecuado para ti.</p>
+						</div>
+					</li>
+				</ul>
+				<!-- Controles -->
+				<ul id="slider-controls" class="slider-controls"></ul>
+			</div>
 		</section>
 		<!--   End Slider Main   -->
+
 		<section class="vendedores">
 			<h2 class="Title_1">Nuestros Vendedores</h2>
 			<article>
@@ -171,7 +207,7 @@
 				</p>
 				<input type="button" value="Mas Info" />
 			</article>
-			<h3><span id="showMore">Ver Mas</span></h3>
+			<h3><span id="showMore">+</span></h3>
 		</section>
 		<section class="sistemas">
 			<h2 class="Title_1" >El Sistema que Prefieras</h2>
@@ -196,31 +232,9 @@
 		</section>
 		<section class="space"><h2>Designed by <a href="https://github.com/JuanJoya" target="_blank">Ing.JuanJoya</a></h2></section>
 	</div>
-	<!--   Menu   
-	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
-		<h3>Menu Principal</h3>
-		<a onClick="abrir()">Login</a> 
-		<ul>
-			<h2>Cliente</h2>
-			<li><a href="Modulo_Compra.html">Comprar</a></li>
-		</ul>
-		<ul>
-			<h2>Administrador</h2>
-			<li><a href="#">Consultar</a></li>
-			<li><a href="#">Modificar</a></li>
-			<li><a href="#">Eliminar</a></li>
-		</ul>
-		<ul>
-			<h2>Fabricante</h2>
-			<li><a href="#">Publicar</a></li>
-			<li><a href="#">Consultar</a></li>
-			<li><a href="#">Modificar</a></li>
-		</ul>
-		<a id="showLeft-2" >Cerrar Menu</a>
-	</nav>
-	  Menu   -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="JS/SliderMain.js"></script>
+	<script src="JS/pushy.min.js"></script>
 	<script src="JS/Main.js"></script>
 </body>
 </html>

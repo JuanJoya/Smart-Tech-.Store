@@ -24,7 +24,7 @@ $buttonLogin.on('click', function () {
 
 $LinkShowMore.on('click', function () {
 	$('.vendedores article').slice(ArticleVendor,8).slideToggle('fast','linear');
-	status = (flag) ? 'Ver Mas' : 'Ver Menos';
+	status = (flag) ? '+' : '-';
 	flag = (flag) ? false : true;
 	$(this).text(status);
 	return false;

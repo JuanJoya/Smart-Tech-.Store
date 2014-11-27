@@ -1,7 +1,5 @@
 /**
- * Titulo: Crear un slider desde 0
- * Categoria: Tutorial, Diseño web, Javascript
- * Blog: http://creaticode.com/blog/
+ * MainCode by creaticode
  */
 $(function() {
 	var SliderModule = (function() {

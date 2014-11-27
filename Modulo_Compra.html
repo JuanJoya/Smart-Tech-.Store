@@ -4,34 +4,69 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Store.Compras</title>
-	<script src="JS/prefixfree.min.js"></script>
-	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/animate.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" data-noprefix>
+	<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css" data-noprefix>
+	<link rel="stylesheet" href="CSS/animate.min.css" data-noprefix>
+	<link rel="stylesheet" href="CSS/normalize.css" data-noprefix>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="stylesheet" href="CSS/Estilos.css">
+	<link rel="stylesheet" href="CSS/pushy.css">
 	<!--[if lt IE 9]>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-	<header>
-		<div class="MenuResponsive icon-MenuLogo"></div>
-		<div><img src="IMG/logo.png"></div>
+	<header class="push">
+		<div class="MenuResponsive icon-MenuLogo menu-btn"></div>
+		<div><img class="menu-btn" src="IMG/menu.png"></div>
 		<div><h1>Smart{Tech}.Store</h1></div>
 		<div class="UserLink">
 			<div id="show-signup" class="icon-SignUp"> <span>Sign Up</span></div>
 		    <div id="show-login" class="icon-LogIn"> <span>Log In</span></div>
 	    </div>
 	</header>
+
 	<!--   Login   -->
 	<div class="login" id="login">
 		<form action="#" method="" >
 			<input type="email" id="user" placeholder="Correo" required>
 			<input type="password" id="pass" placeholder="Contraseña" required>
-			<input type="submit" value="Ok">
+			<input type="submit" value="Entrar">
 		</form>
 	</div>
 	<!--  End-Login   -->
+
+	<!-- Menu -->
+    <nav class="pushy pushy-left">
+    	<div class="menu-title">
+    		Menu Principal
+    	</div>
+    	<div class="menu-items">
+	    	<ul>
+	            <li><a href="#">Item 1</a></li>
+	            <li><a href="#">Item 2</a></li>
+	            <li><a href="#">Item 3</a></li>
+	            <li><a href="#">Item 4</a></li>
+	            <li><a href="#">Item 5</a></li>
+	            <li><a href="#">Item 6</a></li>
+	        </ul>
+    	</div>
+        <div class="menu-user-data">
+        	<figure>
+        		<img src="IMG/user-img.jpg">
+        	</figure>
+        	<ul>
+        		<li>Ing.JuanJoya</li>
+        		<li>Developer</li>
+        		<li>Colombia</li>
+        	</ul>
+        </div>
+    </nav>
+	<!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <!-- End Menu -->
+
 	<div id="container">
 		<section class="space"><h2>Una Nueva forma de ver la Tecnologia!</h2></section>
 		<section class="compras">
@@ -117,30 +152,8 @@
 		</section>
 		<section class="space"><h2><a href="index.html">Volver!</a></h2></section>
 	</div>
-	<!-- 
-	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
-		<h3>Menu Principal</h3>
-		<ul>
-			<li><a href="index.html">Inicio</a></li>
-		</ul>
-		<ul>
-			<h2>Administrador</h2>
-			<li><a href="#">Consultar</a></li>
-			<li><a href="#">Modificar</a></li>
-			<li><a href="#">Eliminar</a></li>
-		</ul>
-		<ul>
-			<h2>Fabricante</h2>
-			<li><a href="#">Publicar</a></li>
-			<li><a href="#">Consultar</a></li>
-			<li><a href="#">Modificar</a></li>
-			<li><a href="#">Eliminar</a></li>
-
-		</ul>
-		<a id="showLeft-2" >Cerrar Menu</a>
-	</nav>
-	-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="JS/pushy.min.js"></script>
 	<script src="JS/Main.js"></script>
 </body>
 </html>

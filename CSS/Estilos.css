@@ -1,15 +1,13 @@
-/**/
-@import url(http://fonts.googleapis.com/css?family=Oswald:700);
-@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);
-/**/
-
+/*
+  Main Styles
+*/
 @font-face {
   font-family: 'open_sans';
-  src: url('../Fonts/OpenSans-Regular-webfont.eot');
-  src: url('../Fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../Fonts/OpenSans-Regular-webfont.woff') format('woff'),
-       url('../Fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-       url('../Fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  src: url('../Fonts/open_sans/OpenSans-Regular-webfont.eot');
+  src: url('../Fonts/open_sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/open_sans/OpenSans-Regular-webfont.woff') format('woff'),
+       url('../Fonts/open_sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('../Fonts/open_sans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +35,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/**/
+
 .icon-LogIn:before {
   content: "\e601";
 }
@@ -87,7 +85,8 @@ header div img{
 }
 
 header div img:hover{
-  transform:rotate(90deg);
+  transform:rotate(45deg);
+  cursor: pointer;
 }
 
 header div h1{
@@ -140,7 +139,7 @@ header .UserLink div span{
 }
 /*.......End.Header .......*/
 
-/*------    -Login-    ----*/
+/*----------Login-----------*/
 .login{
   font-family: 'Archivo Narrow', arial;
   box-sizing: border-box;
@@ -149,6 +148,7 @@ header .UserLink div span{
   width: 100%;
   position: absolute;
   top: 97px;
+  opacity:0.9;
   display: none;
   background:#A9A9A9;
   overflow: hidden;
@@ -209,11 +209,11 @@ header .UserLink div span{
   padding:0;
 }
 
-.vendedores h2{
-  color:#e64a3d;
+.vendedores h2, .compras h2{
+  color:#00c5b9;
 }
 
-.sistemas h2, .compras h2{
+.sistemas h2{
    color: #DCDCDC;
 }
 
@@ -225,16 +225,111 @@ header .UserLink div span{
 .vendedores h3 span{
   padding:0;
   margin:0;
-  font-family: 'Oswald';
-  font-size: .8em;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.5em;
   color:#e64a3d;
   cursor: pointer;
 }
-
 .vendedores, .sistemas, .compras{
   font-family: 'Archivo Narrow', arial;
   padding: 1.8em 0;
 }
+
+/*-----------Slider--------------*/
+/*By CreatiCode*/
+
+ .slider-section{
+  font-family: 'Archivo Narrow', arial;
+  margin:0;
+  overflow:hidden;
+  background:#454545;
+  padding:0;
+ }
+
+.slider-container { 
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.slider-wrapper {
+  background:black;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.slider-wrapper li {
+  display: none;
+}
+
+li.slide-current {
+  display: block;
+}
+
+.slider-wrapper li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  padding: 12px;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.caption-title {
+  margin:0;
+  padding:0;
+  color: #00c5b9;
+  font-weight: 700;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  margin:0;
+    padding:0;
+  color: #FFF;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+
+.slider-wrapper li:hover .caption {
+  transform: translateY(0);
+}
+
+.slider-controls {
+  padding:0;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slider-controls li {
+  background:#f0eeee;
+  display: inline-block;
+  height: 6px;
+  width: 20px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.slider-controls li.active {
+  background: #e64a3d;  
+}
+/*-----------End Slider-------------*/
 
 /*---------- Vendedores ----------*/
 .vendedores{
@@ -255,11 +350,12 @@ header .UserLink div span{
 }
 
 .vendedores article:hover p{
-  color:white;
+  color:black;
   transform:scale(1.1,1.1);
 }
 
 .vendedores article p{
+  color:white;
   transition: 0.4s;
   font-family: 'Archivo Narrow', arial;
   font-size: 1.3em;
@@ -285,7 +381,7 @@ header .UserLink div span{
   margin:.5em 0;
   vertical-align:top;
   font-size: 2.5em;
-  font-family: 'Oswald'
+  font-family: 'Oswald';
 }
 
 .vendedores article input{
@@ -355,13 +451,13 @@ header .UserLink div span{
 /*-------End Publicidad-----*/
 
 
-/*---------Modulo Compra---------------*/ 
+/*---------Modulo Compra----------*/ 
 .compras {
-  background: #222;
+  background: #f0eeee;
 }
 .compras article {
   border-radius: .5em;
-  background: #1a1a1a;
+  background: #d8d6d6;
   display: inline-block;
   margin:1% 0.5%;
   padding-bottom: .8em;
@@ -388,14 +484,14 @@ header .UserLink div span{
 
 .compras article div ul li{
   font-size: 1em;
-  color: white;
+  color: black;
   text-align: justify;
 }
 
 .compras article input{
   font-family: 'Archivo Narrow', arial;
   font-size: 1em;
-  background-color: #7FBA00;
+  background: #454545;
   border-radius: 2px;
   border-width: 0;
   display:block;
@@ -407,7 +503,7 @@ header .UserLink div span{
 }
 
 .compras article input:hover{
-  background: #5c8800;
+  background: #00c5b9;
 }
 
 
@@ -495,4 +591,54 @@ header .UserLink div span{
   .sistemas article, .vendedores article{
     width: 290px;
   } 
+}
+
+/*---------Responsive-Slider-----------*/
+@media only screen and (max-width: 1300px) {
+  .slider-container {
+    width: 896px;
+  }
+  .slider-wrapper {
+    height: 350px;
+  }
+  .caption {
+    font-size:.7em;
+    padding:.2em;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .slider-container {
+    width: 640px;
+  }
+  .slider-wrapper {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .slider-container {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    height: 200px;
+  }
+
+  .caption , .slider-controls {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .slider-wrapper {
+    height: 160px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .slider-wrapper {
+    height: 120px;
+  }
 }

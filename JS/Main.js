@@ -24,9 +24,17 @@ $buttonLogin.on('click', function () {
 
 $LinkShowMore.on('click', function () {
 	$('.vendedores article').slice(ArticleVendor,8).slideToggle('fast','linear');
-	status = (flag) ? '+' : '-';
 	flag = (flag) ? false : true;
-	$(this).text(status);
+		if (flag) 
+		{
+			$(this).removeClass('icon-circle-down');
+			$(this).addClass('icon-circle-up');
+		}
+		else
+		{
+			$(this).removeClass('icon-circle-up');
+			$(this).addClass('icon-circle-down');
+		}
 	return false;
 });
 

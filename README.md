@@ -1,16 +1,16 @@
-Smart-Tech-.Store
+Smart{Tech}.Store
 =================
 
 Proyecto FrontEnd de plataforma generica para venta de dispositivos móviles.
 
-Capturas
+ScreenShot
 -------------------
-![ScreenShot](/ScreenShots/3.jpg)
+![ScreenShot](/ScreenShots/4.png)
 
-![ScreenShot](/ScreenShots/4.jpg)
+![ScreenShot](/ScreenShots/3.png)
 
-![ScreenShot](/ScreenShots/1.jpg)
+![ScreenShot](/ScreenShots/1.png)
 
-Version Responsive
+Responsive
 -------------------
 ![ScreenShot](/ScreenShots/2.png)

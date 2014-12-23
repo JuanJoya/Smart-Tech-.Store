@@ -16,13 +16,18 @@
 }
 
 .pushy .menu-title{
-    background:#48BA77;
+    background:#454545;
     margin:0;
     font-size: 2em;
     color: #FFF;
     text-align: center;
     padding: 8px;
     text-shadow: 2px 2px 2px black;
+}
+
+.pushy .menu-title span{
+    font-size: .7em;
+    color:#D2D2D2;
 }
 
 .pushy .menu-items ul{
@@ -36,7 +41,7 @@
     padding: 15px 30px;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     text-decoration: none;
-    transition:all 0.3s ease;
+    transition:all 0.2s ease;
 }
 
 .pushy a:hover{

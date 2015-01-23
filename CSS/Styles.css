@@ -14,11 +14,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:url('../Fonts/Iconos/icomoon.eot?8na2sk');
-  src:url('../Fonts/Iconos/icomoon.eot?#iefix8na2sk') format('embedded-opentype'),
-    url('../Fonts/Iconos/icomoon.woff?8na2sk') format('woff'),
-    url('../Fonts/Iconos/icomoon.ttf?8na2sk') format('truetype'),
-    url('../Fonts/Iconos/icomoon.svg?8na2sk#icomoon') format('svg');
+  src:url('../Fonts/IconFont/icomoon.eot?8na2sk');
+  src:url('../Fonts/IconFont/icomoon.eot?#iefix8na2sk') format('embedded-opentype'),
+    url('../Fonts/IconFont/icomoon.woff?8na2sk') format('woff'),
+    url('../Fonts/IconFont/icomoon.ttf?8na2sk') format('truetype'),
+    url('../Fonts/IconFont/icomoon.svg?8na2sk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,115 +36,62 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
-  content: "\e900";
-}
-.icon-pencil2:before {
-  content: "\e906";
-}
-.icon-profile:before {
-  content: "\e923";
-}
-.icon-folder-download:before {
-  content: "\e933";
-}
-.icon-folder-upload:before {
-  content: "\e934";
-}
-.icon-price-tag:before {
-  content: "\e935";
-}
-.icon-cart:before {
-  content: "\e93a";
-}
-.icon-coin-dollar:before {
-  content: "\e93b";
-}
-.icon-credit-card:before {
-  content: "\e93f";
-}
-.icon-phone:before {
-  content: "\e942";
-}
-.icon-envelop:before {
-  content: "\e945";
-}
-.icon-printer:before {
-  content: "\e954";
-}
-.icon-undo2:before {
-  content: "\e967";
-}
-.icon-redo2:before {
-  content: "\e968";
-}
-.icon-bubbles2:before {
-  content: "\e96d";
-}
-.icon-user:before {
-  content: "\e971";
-}
-.icon-key:before {
-  content: "\e98d";
-}
-.icon-cog:before {
-  content: "\e994";
-}
-.icon-menu:before {
-  content: "\e9bd";
-}
-.icon-link:before {
-  content: "\e9cb";
-}
-.icon-star-empty:before {
-  content: "\e9d7";
-}
+.icon-home:before {content: "\e900";}
+.icon-pencil2:before {content: "\e906";}
+.icon-play:before {content: "\e912";}
+.icon-profile:before {content: "\e923";}
+.icon-folder-download:before {content: "\e933";}
+.icon-folder-upload:before {content: "\e934";}
+.icon-price-tag:before {content: "\e935";}
+.icon-cart:before {content: "\e93a";}
+.icon-coin-dollar:before {content: "\e93b";}
+.icon-credit-card:before {content: "\e93f";}
+.icon-phone:before {content: "\e942";}
+.icon-envelop:before {content: "\e945";}
+.icon-location2:before {content: "\e948";}
+.icon-clock:before {content: "\e94e";}
+.icon-printer:before {content: "\e954";}
+.icon-mobile:before {content: "\e958";}
+.icon-tablet:before {content: "\e95a";}
+.icon-undo2:before {content: "\e967";}
+.icon-redo2:before {content: "\e968";}
+.icon-bubbles2:before {content: "\e96d";}
+.icon-user:before {content: "\e971";}
+.icon-zoom-in:before {content: "\e987";}
+.icon-key:before {content: "\e98d";}
+.icon-lock:before {content: "\e98f";}
+.icon-cog:before {content: "\e994";}
+.icon-truck:before {content: "\e9b0";}
+.icon-shield:before {content: "\e9b4";}
+.icon-menu:before {content: "\e9bd";}
+.icon-sphere:before {content: "\e9c9";}
+.icon-link:before {content: "\e9cb";}
+.icon-star-empty:before {content: "\e9d7";}
 .icon-star-full:before {
-  color:#e5c100;
+  text-shadow: 0px 0px 1px black;
+  color:#FFD700;
   content: "\e9d9";
 }
-.icon-heart:before {
-  content: "\e9da";
-}
-.icon-enter:before {
-  content: "\ea13";
-}
-.icon-circle-up:before {
-  content: "\ea41";
-}
-.icon-circle-down:before {
-  content: "\ea43";
-}
-.icon-google-plus3:before {
-  content: "\ea8a";
-}
-.icon-facebook3:before {
-  content: "\ea8e";
-}
-.icon-twitter3:before {
-  content: "\ea93";
-}
-.icon-github4:before {
-  content: "\eab4";
-}
-.icon-apple:before {
-  content: "\eabf";
-}
-.icon-android:before {
-  content: "\eac1";
-}
-.icon-windows8:before {
-  content: "\eac3";
-}
-.icon-skype:before {
-  content: "\eac6";
-}
-.icon-file-pdf:before {
-  content: "\eada";
-}
-.icon-file-excel:before {
-  content: "\eadd";
-}
+.icon-heart:before {content: "\e9da";}
+.icon-enter:before {content: "\ea13";}
+.icon-circle-up:before {content: "\ea41";}
+.icon-circle-right:before {content: "\ea42";}
+.icon-circle-down:before {content: "\ea43";}
+.icon-circle-left:before {content: "\ea44";}
+.icon-checkbox-checked:before {content: "\ea52";}
+.icon-google-plus2:before {content: "\ea89";}
+.icon-google-plus3:before {content: "\ea8a";}
+.icon-facebook2:before {content: "\ea8d";}
+.icon-facebook3:before {content: "\ea8e";}
+.icon-twitter2:before {content: "\ea92";}
+.icon-twitter3:before {content: "\ea93";}
+.icon-github4:before {content: "\eab4";}
+.icon-apple:before {content: "\eabf";}
+.icon-android:before {content: "\eac1";}
+.icon-windows8:before {content: "\eac3";}
+.icon-skype:before {content: "\eac6";}
+.icon-file-pdf:before {content: "\eada";}
+.icon-file-excel:before {content: "\eadd";}
 
 body{
   background-color:#222;
@@ -153,7 +100,7 @@ body{
   font-size: 16px;
   margin:0;
   padding:0;
-  overflow-x: hidden;
+
 }
 
 /*..........Header ..........*/
@@ -240,7 +187,7 @@ header .UserLink div span{
 /*.......End.Header .......*/
 
 /*----------Login-----------*/
-.login{
+.main-login{
   font-family: 'Archivo Narrow', arial;
   box-sizing: border-box;
   padding:1.2em;
@@ -256,19 +203,19 @@ header .UserLink div span{
   z-index: 20;
 }
 
-.login input{
+.main-login input{
   border-radius: 5px;
   border: 1px solid #ccc;
   color:black;
   padding: 0.2em 0.6em;
 }
 
-.login input:focus {
+.main-login input:focus {
     border: 1px solid #E64A3D;
     outline:0;/*Chrome*/
 } 
 
-.login input[type="submit"]{
+.main-login input[type="submit"]{
   background: #e64a3d;
   border-color: #e64a3d;
   color: white;
@@ -303,26 +250,26 @@ header .UserLink div span{
   color: #FF0000;
 }
 
-.sistemas h2, .vendedores h2, .compras h2{
+.system-section h2, .seller-section h2, .purchase-section h2, .mobile-detail h2, .mobile-detail-2 h2{
   font-size: 2.5em;
   margin:0;
   padding:0;
 }
 
-.compras h2{
+.purchase-section h2, .mobile-detail h2, .mobile-detail-2 h2{
   color:#00c5b9;
 }
 
-.sistemas h2, .vendedores h2, .vendedores h3 span{
+.system-section h2, .seller-section h2, .seller-section h3 span{
    color: #DCDCDC;
 }
 
-.vendedores h3{
+.seller-section h3{
   padding:0;
   margin:0;
 }
 
-.vendedores h3 span{
+.seller-section h3 span{
   padding:0;
   margin:0;
   font-size: 2em;
@@ -330,12 +277,12 @@ header .UserLink div span{
   transition:.2s color linear;
 }
 
-.vendedores h3 span:hover{
+.seller-section h3 span:hover{
   color:#00c5b9;
 }
 
-.vendedores, .sistemas, .compras{
-  font-family: 'Archivo Narrow', arial;
+.seller-section, .system-section, .purchase-section, .mobile-detail, .mobile-detail-2 {
+  font-family: 'Archivo Narrow';
   padding: 1.8em 0;
 }
 
@@ -438,11 +385,11 @@ li.slide-current {
 /*-----------End Slider-------------*/
 
 /*---------- Vendedores ----------*/
-.vendedores{
+.seller-section{
   background:#222;
 }
 
-.vendedores article{
+.seller-section article{
   background:#1a1a1a;
   border-radius: .8em;
   display: inline-block;
@@ -453,11 +400,11 @@ li.slide-current {
   /*width:20%;*/
 }
 
-.vendedores article:hover p{
+.seller-section article:hover p{
   transform:scale(1.1,1.1);
 }
 
-.vendedores article p{
+.seller-section article p{
   color:white;
   transition: 0.4s;
   font-family: 'Archivo Narrow', arial;
@@ -466,20 +413,20 @@ li.slide-current {
   text-align: center;
 }
 
-.vendedores article div{
+.seller-section article div{
   display:inline-block;
 }
 
-.vendedores article div figure{
+.seller-section article div figure{
   display:inline-block;
   margin:0.5em;
 }
 
-.vendedores article div figure img{
+.seller-section article div figure img{
   width:80px;
 }
 
-.vendedores article div h3{
+.seller-section article div h3{
   display:inline-block;
   margin:.5em 0;
   vertical-align:top;
@@ -487,7 +434,7 @@ li.slide-current {
   font-family: 'Oswald';
 }
 
-.vendedores article input{
+.seller-section article input{
   font-family: 'Archivo Narrow', arial;
   font-size: 1.1em;
   background: #454545;
@@ -501,13 +448,13 @@ li.slide-current {
   outline:0;/*Chrome*/
 }
 
-.vendedores article input:hover{
+.seller-section article input:hover{
   background: #00c5b9;
 }
 /*-------End Vendedores ----------*/
 
 /*---------Publicidad-------------*/
-.sistemas{
+.system-section{
   background: #454545;
   background-image: url("../IMG/blur_background.jpg");
   background-size: cover;
@@ -516,7 +463,7 @@ li.slide-current {
   /*background:#808080;*/
 } 
 
-.sistemas article{
+.system-section article{
   background-color: rgba(10,10,10,0.5);
   /*background: #008AAE;*/
   /*background: #666666;*/
@@ -529,25 +476,25 @@ li.slide-current {
   vertical-align: top;
 }
 
-.sistemas article img{ 
-  width:80%;
+.system-section article img{ 
+  width:85%;
   max-width: 450px;
   margin:1em 0 .5em 0;
 }
 
-.sistemas article p{
+.system-section article p{
   opacity: 0.8;
   padding:0;
   margin:0 0 .2em 0;
   border-top:#00c5b9 solid 1px;
 }
 
-.sistemas article p span{
-    font-size: 2em;
-    color:#00c5b9;
+.system-section article p span{
+  font-size: 2em;
+  color:#00c5b9;
 }
 
-.sistemas article p a{
+.system-section article p a{
   text-decoration: none;
   font-size: 2.2em;
   font-family: 'Oswald';
@@ -556,25 +503,25 @@ li.slide-current {
   transition:0.3s;
 }
 
-.sistemas article p a:hover{
+.system-section article p a:hover{
   color:#00c5b9;
 }
 
- footer{
+footer{
   overflow:hidden;
   padding:0;
   margin:0;
   background:#454545;
  }
 
- footer p{
+footer p{
   display:inline-block;
   font-size: .9em;
   font-family: 'open_sans';
   color:#DCDCDC;
  }
 
- footer p a{
+footer p a{
   text-decoration: none;
   font-family: 'Oswald';
   color:white;
@@ -607,16 +554,16 @@ footer .footer-nav ul li:hover{
 /*-------End Publicidad-----*/
 
 
-/*---------Modulo Compra----------*/ 
-.compras {
+/*---------Purchase Module----------*/ 
+.purchase-section {
   background: #f0eeee;
 }
-.compras article {
+.purchase-section article {
   position:relative;
   border-radius: .5em;
   background: #d8d6d6;
   display: inline-block;
-  margin:1% 0.5%;
+  margin:8px;
   padding-bottom: .8em;
   width: 250px;
   vertical-align: top;
@@ -624,72 +571,76 @@ footer .footer-nav ul li:hover{
   transition: all 0.2s linear;
 }
 
-.compras article span{
+.purchase-section article:hover{
+  box-shadow: 0 0 5px black;
+}
+
+.purchase-section article span{
   position:absolute;
   color:gray;
   font-size: 1.2em;
   cursor:pointer;
 }
 
-.compras article .Promo{
+.purchase-section article .promo{
   /*color:#ff4d4d;*/
   right:10px;
   top:10px;  
 }
 
-.compras article .Favorite{
+.purchase-section article .favorite{
   right:10px;
   top:40px;
 }
 
-.compras article .Data-Link{
+.purchase-section article .data-link{
   right:10px;
   top:70px;
 }
 
-.compras article figure{
+.purchase-section article figure{
   border-radius: .5em;
   display:block;
   margin:1em auto;
 }
 
-.compras article figure img{
+.purchase-section article figure img{
   width: 115px;
   height: 150px;
 }
 
-.compras article ul{
+.purchase-section article ul{
   list-style:none;
 }
 
-.compras article .Mobile_Info ul{
+.purchase-section article .mobile-info ul{
   margin:0;
   padding:0;
   text-align: center;
 }
 
-.compras article .Mobile_Info ul li{
+.purchase-section article .mobile-info ul li{
   font-size: 1em;
   color: black;
 }
 
-.compras article .ranking {
+.purchase-section article .ranking {
   padding:5px 0;
 }
 
-.compras article .ranking ul{
+.purchase-section article .ranking ul{
   padding:0;
   margin:0;
 }
 
-.compras article .ranking ul li {
-  color: gray;
+.purchase-section article .ranking ul li {
+  color: #A7A7A7;
   font-size: 1.2em;
   display:inline-block;
   cursor:pointer;
 }
 
-.compras article input{
+.purchase-section article input{
   font-family: 'Archivo Narrow', arial;
   font-size: 1em;
   background: #454545;
@@ -703,10 +654,158 @@ footer .footer-nav ul li:hover{
   outline:0;/*Chrome*/
 }
 
-.compras article input:hover{
+.purchase-section article input:hover{
   background: #00c5b9;
 }
+/*------End Purshace Module------------*/
 
+/*------Mobile Detail------------------*/
+.mobile-detail{
+  background: #F0EEEE;
+}
+
+.mobile-detail article{
+  position:relative;
+  background:#D8D6D6;
+  border-radius: .8em;
+  display: inline-block;
+  margin:1% .5%;
+  padding:1em;
+  vertical-align: top; 
+}
+
+.detail-img{
+  width:500px;
+}
+
+.detail-img div{
+  margin:0;
+}
+
+.purchase-data {
+  text-align: left;
+}
+
+.purchase-data h3 {
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 1.8em;
+  padding: .5em 0;
+  margin: 0;
+  color: #515151;
+  /*text-shadow: -2px -2px 0px #FFF, 2px -2px 0px #FFF, -2px 2px 0px #FFF, 2px 2px 0px #FFF;*/
+}
+
+.purchase-data .ranking {
+  text-align: center;
+  padding:0 0 .5em 0;
+}
+
+.purchase-data .ranking ul{
+  padding:0;
+  margin:0;
+}
+
+.purchase-data .ranking ul li {
+  color: #A7A7A7;
+  font-size: 1.8em;
+  display:inline-block;
+  cursor:pointer;
+}
+
+.purchase-data h4 {
+  font-family: 'Oswald';
+  font-size: 1.5em;
+  padding: .2em .5em;
+  margin: 0;
+  color: #515151;
+}
+
+.purchase-options{
+
+}
+
+.purchase-options ul{
+  list-style: none;
+  color: #515151;
+  padding-left:2em; 
+  padding-right: .5em; 
+  font-size: 1.3em;
+}
+
+.purchase-options ul li{
+  padding: 2px 0;
+}
+
+.styled-select select {
+  background: transparent;
+  width: 78px;
+  padding: 5px;
+  font-size: 1.3em;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 41px;
+  -webkit-appearance: none;
+}
+
+.styled-select {
+  color: #CDCDCD;
+  display:inline-block;
+  width: 60px;
+  height: 41px;
+  overflow: hidden;
+  margin:0 0 0 80px;
+  background: url(../IMG/List/arrow-down.png) no-repeat right #868686;
+}
+
+.purchase-data button{
+  background: #868686;
+  width: 200px;
+  height: 41px;
+  border: none;
+  margin: 0px 0px 0px -5px;
+  vertical-align: top;
+  font-size: 1.3em;
+  transition:background 0.2s ease;
+}
+
+.purchase-data button:hover{
+  background: #00C5B9;
+}
+
+.mobile-detail-2{
+  background: #D8D6D6;
+}
+
+.mobile-detail-2 article{
+  display: inline-block;
+  margin:1% .5%;
+  padding:1em;
+}
+
+.detail-info table{ 
+  text-align: left;
+  font-family:'open_sans';
+}
+
+.detail-info tr,td{
+   padding:5px 10px; 
+
+}
+.detail-info table tr td:nth-child(1){
+  color:#E64A3D;
+  font-family: 'Archivo Narrow';
+  font-size: 1.1em;
+}
+
+.detail-info table tr td:nth-child(2){
+  color:black;
+  font-size: 1em;
+
+}
+
+/*--------End Mobile Detail------------*/
 
 /*------------Responsive Design ----------*/
 @media screen and (max-width:768px){
@@ -722,8 +821,13 @@ footer .footer-nav ul li:hover{
   header .UserLink div{
     padding: 6px;
   }
-  body .login{
+  body .main-login{
     top: 82px;
+  }
+  .mobile-detail .detail-img , .mobile-detail .purchase-data{
+    padding: 10px;
+    margin:1% 0;
+    width: 90%;
   }
 }
 
@@ -764,32 +868,56 @@ footer .footer-nav ul li:hover{
   header .UserLink div span{
     display:none;
   }
-  body .login{
+  body .main-login{
     padding:0;
     opacity: .9;
     top: 54px;
   }
-  .login input{
+  .main-login input{
     display:block;
     width: 70%;
     margin:0.5em auto;
   }
-  .login input[type="submit"]{
+  .main-login input[type="submit"]{
     width: 75%;
   }
-  #container .vendedores h2{
+  #container .seller-section h2{
     font-size:1.8em; 
     padding:0;
   }
-  #container .sistemas h2{
+  #container .system-section h2{
     font-size:1.7em; 
     padding:0 0 .5em 0;
   }
-  #container .compras h2{
-    font-size:1.5em; 
+  #container .purchase-section h2{
+    font-size:1.8em; 
     padding:0 0 .5em 0;
   }
-  .sistemas article, .vendedores article{
+  #container .mobile-detail h2, #container .mobile-detail-2 h2{
+    font-size:1.7em; 
+    padding:0 0 .5em 0;
+  }
+  #container .mobile-detail .purchase-data .purchase-options{
+    font-size: .8em;
+  }
+  #container .mobile-detail .purchase-data select{
+    width: 62px;
+    padding: 5px;
+    font-size: 1em;
+    height: 30px;
+  }
+  #container .mobile-detail .purchase-data .styled-select{
+    width: 45px;
+    height: 30px;
+    margin:0 0 0 60px;
+  } 
+  #container .mobile-detail .purchase-data button{
+    width: 150px;
+    height: 30px;
+    margin: 0 0 0 -4px;
+    font-size: 1em;
+  }
+  .system-section article, .seller-section article{
     width: 290px;
   }
   footer .footer-nav ul{

@@ -12,8 +12,8 @@ var $formLogin = $('#login'),
 //Animate.css
 $Title.addClass("animated bounceInLeft");
 
-ArticleVendor = ($('.vendedores').width() <= 1533  && $('.vendedores').width() >= 1125) ? 3 : 4;	
-$('.vendedores article').slice(ArticleVendor,8).hide();		
+ArticleVendor = ($('.seller-section').width() <= 1533  && $('.seller-section').width() >= 1125) ? 3 : 4;	
+$('.seller-section article').slice(ArticleVendor,8).hide();		
 
 //Eventos
 $buttonLogin.on('click', function () {
@@ -23,7 +23,7 @@ $buttonLogin.on('click', function () {
 });
 
 $LinkShowMore.on('click', function () {
-	$('.vendedores article').slice(ArticleVendor,8).slideToggle('fast','linear');
+	$('.seller-section article').slice(ArticleVendor,8).slideToggle('fast','linear');
 	flag = (flag) ? false : true;
 		if (flag) 
 		{
@@ -37,6 +37,15 @@ $LinkShowMore.on('click', function () {
 		}
 	return false;
 });
+
+
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+
 
 /*
 $("#caja1").hover(function () {

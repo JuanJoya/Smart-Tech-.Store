@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>Store.Compras.Detalle</title>
+	<title>Store.Compras</title>
 	<link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" data-noprefix>
 	<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css" data-noprefix>
 	<link rel="stylesheet" href="CSS/animate.min.css" data-noprefix>
@@ -11,11 +11,6 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="stylesheet" href="CSS/Styles.css">
 	<link rel="stylesheet" href="CSS/pushy.css">
-	<link rel="stylesheet" href="CSS/flexslider.css">
-	<!--[if lt IE 9]>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 	<header class="push">
@@ -70,28 +65,46 @@
 
 	<div id="container">
 		<section class="space"><h2>Una Nueva forma de ver la Tecnologia!</h2></section>
-		<section class="mobile-detail">
-			<h2 class="Title_1">Detalle del Dispositivo</h2>
-			<article class="detail-img">
-				<div class="flexslider">
-					<ul class="slides">
-					    <li data-thumb="IMG/detail1.jpg">
-					      	<img src="IMG/detail1.jpg" />
-					    </li>
-					    <li data-thumb="IMG/detail2.jpg">
-					      	<img src="IMG/detail2.jpg" />
-					    </li>
-					    <li data-thumb="IMG/detail3.jpg">
-					      	<img src="IMG/detail3.jpg" />
-					    </li>
-					    <li data-thumb="IMG/detail4.jpg">
-					      	<img src="IMG/detail4.jpg" />
-					    </li>
+		<section class="purchase-section">
+			<h2 class="Title_1">Dispositivos en Venta</h2>
+			<article>
+				<span class="favorite icon-heart"> </span>
+				<span class="promo icon-price-tag"> </span>
+				<span class="data-link icon-link"> </span>
+				<figure>
+					<img src="IMG/moto-x.png">
+				</figure>
+				<div class="mobile-info">
+					<ul>
+						<li>Modelo: Moto G</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 400.000 COP</li>
 					</ul>
 				</div>
+				<div class="ranking">
+					<ul>
+						<li class="icon-star-full"> </li>
+						<li class="icon-star-empty"> </li>
+						<li class="icon-star-empty"> </li>
+						<li class="icon-star-empty"> </li>
+					</ul>
+				</div>
+				<input type="button" value="Ver Detalle" />
 			</article>
-			<article class="purchase-data">
-				<h3>Moto X (2014)</h3>
+			<article>
+				<span class="favorite icon-heart"> </span>
+				<span class="promo icon-price-tag"> </span>
+				<span class="data-link icon-link"> </span>
+				<figure>
+					<img src="IMG/moto-x-2.png">
+				</figure>
+				<div class="mobile-info">
+					<ul>
+						<li>Modelo: Moto X</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 900.000 COP</li>
+					</ul>
+				</div>
 				<div class="ranking">
 					<ul>
 						<li class="icon-star-full"> </li>
@@ -99,102 +112,57 @@
 						<li class="icon-star-full"> </li>
 						<li class="icon-star-empty"> </li>
 					</ul>
-				</div>
-				<h4>
-					<span class="icon-coin-dollar"> </span>
-					450.000 COP
-				</h4>
-				<div class="purchase-options">
+				</div>				
+				<input type="button" value="Ver Detalle" />
+			</article>
+			<article>
+				<span class="favorite icon-heart"> </span>
+				<span class="promo icon-price-tag"> </span>
+				<span class="data-link icon-link"> </span>
+				<figure>
+					<img src="IMG/moto-x.png">
+				</figure>
+				<div class="mobile-info">
 					<ul>
-						<li>
-							<span class="icon-credit-card"> </span> 
-							Acepta depósito bancario y tarjeta de crédito. 
-						</li>
-						<li>
-							<span class="icon-location2"> </span>
-							Bogota, Colombia.	
-						</li>
-						<li> 
-							<span class="icon-truck"> </span>
-							Envio gratis a todo el pais.
-						</li>
-						<li> 
-							<span class="icon-shield"> </span>
-							Compra protegida SSL.
-						</li>
+						<li>Modelo: Moto G</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 400.000 COP</li>
 					</ul>
 				</div>
-				<div class="styled-select">
-					<select required>
-					  <option value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
-					  <option value="4">5</option>
-					</select>
+				<div class="ranking">
+					<ul>
+						<li class="icon-star-full"> </li>
+						<li class="icon-star-empty"> </li>
+						<li class="icon-star-empty"> </li>
+						<li class="icon-star-empty"> </li>
+					</ul>
 				</div>
-				<button type="button">Agregar al Carrito  
-					<span class="icon-cart"> </span>
-				</button>
-			<!-- 
-				<div>
-					<span class="favorite icon-heart"> </span>
-					<span class="promo icon-price-tag"> </span>
-					<span class="data-link icon-link"> </span>			
+				<input type="button" value="Ver Detalle" />
+			</article>
+			<article>
+				<span class="favorite icon-heart"> </span>
+				<span class="promo icon-price-tag"> </span>
+				<span class="data-link icon-link"> </span>
+				<figure>
+					<img src="IMG/moto-x-2.png">
+				</figure>
+				<div class="mobile-info">
+					<ul>
+						<li>Modelo: Moto X</li>
+						<li>Fabricante: Motorola</li>
+						<li>Valor: 900.000 COP</li>
+					</ul>
 				</div>
-			-->
-			</article>		
-		</section>
-		<section class="mobile-detail-2">
-			<h2 class="Title_1">Especificaciones técnicas</h2>
-			<article class="detail-info">
-				<table>
-						<tr>
-							<td>Fabricante</td>
-							<td>Motorola</td>
-						</tr>
-						<tr>
-							<td>Modelo</td>
-							<td>Moto X (2014)</td>
-						</tr>
-						<tr>
-							<td>Procesador</td>
-							<td>Snapdragon 801 Quad-core 2.5 GHz</td>
-						</tr>
-						<tr>
-							<td>RAM</td>
-							<td>2 GB RAM</td>
-						</tr>
-						<tr>
-							<td>ROM</td>
-							<td>16/32 GB,</td>
-						</tr>
-						<tr>
-							<td>S.O.</td>
-							<td>Android OS, v4.4.4 KitKat</td>
-						</tr>
-						<tr>
-							<td>Bateria</td>
-							<td>Li-Ion 2300 mAh battery</td>
-						</tr>
-						<tr>
-							<td>Camara</td>
-							<td>13 MP, 2160p@30fps</td>
-						</tr>
-						<tr>
-							<td>Precio</td>
-							<td>450.000 COP</td>
-						</tr>
-						<tr>
-							<td>Disponibilidad</td>
-							<td>17 Und</td>
-						</tr>
-						<tr>
-							<td>Garantia</td>
-							<td>6 Meses</td>
-						</tr>
-				</table>		
-			</article>	
+				<div class="ranking">
+					<ul>
+						<li class="icon-star-full"> </li>
+						<li class="icon-star-full"> </li>
+						<li class="icon-star-full"> </li>
+						<li class="icon-star-empty"> </li>
+					</ul>
+				</div>				
+				<input type="button" value="Ver Detalle" />
+			</article>
 		</section>
 		<footer>
 			<p>
@@ -215,7 +183,6 @@
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="JS/pushy.min.js"></script>
-	<script src="JS/jquery.flexslider-min.js"></script>
 	<script src="JS/Main.js"></script>
 </body>
 </html>

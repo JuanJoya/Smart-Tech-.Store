@@ -100,7 +100,7 @@ body{
   font-size: 16px;
   margin:0;
   padding:0;
-
+  overflow-x: hidden;
 }
 
 /*..........Header ..........*/
@@ -197,7 +197,7 @@ header .UserLink div span{
   top: 97px;
   opacity:0.9;
   display: none;
-  background:#A9A9A9;
+  background:rgba(10, 10, 10, 0.5);
   overflow: hidden;
   text-align: right;
   z-index: 20;
@@ -250,7 +250,7 @@ header .UserLink div span{
   color: #FF0000;
 }
 
-.system-section h2, .seller-section h2, .purchase-section h2, .mobile-detail h2, .mobile-detail-2 h2{
+.Title_1{
   font-size: 2.5em;
   margin:0;
   padding:0;
@@ -260,7 +260,7 @@ header .UserLink div span{
   color:#00c5b9;
 }
 
-.system-section h2, .seller-section h2, .seller-section h3 span{
+.system-section h2, .seller-section h2, .sign-up-section h2, .seller-section h3 span{
    color: #DCDCDC;
 }
 
@@ -281,7 +281,7 @@ header .UserLink div span{
   color:#00c5b9;
 }
 
-.seller-section, .system-section, .purchase-section, .mobile-detail, .mobile-detail-2 {
+.seller-section, .system-section, .purchase-section, .mobile-detail, .mobile-detail-2, .sign-up-section {
   font-family: 'Archivo Narrow';
   padding: 1.8em 0;
 }
@@ -294,25 +294,27 @@ header .UserLink div span{
   margin:0;
   overflow:hidden;
   background:#454545;
-  padding:0;
+  padding:1em 0;
  }
 
-.slider-container { 
+.slider-section * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
+}
+
+.slider-container { 
   margin: 0 auto;
   width: 1280px;
 }
 
 .slider-wrapper {
-  border-radius:5px;
-  background:black;
-  box-sizing: border-box;
   position: relative;
   z-index: 10;
   height: 500px;
-  width: 100%;
+  width: 100%; 
   overflow: hidden;
-  list-style-type: none;
 }
 
 .slider-wrapper li {
@@ -343,8 +345,6 @@ li.slide-current {
 }
 
 .caption-title {
-  margin:0;
-  padding:0;
   color: #00c5b9;
   font-weight: 700;
   font-size: 1.6em;
@@ -352,8 +352,6 @@ li.slide-current {
 }
 
 .caption p {
-  margin:0;
-    padding:0;
   color: #FFF;
   font-size: 1.4em;
   line-height: 1.3em;
@@ -364,7 +362,6 @@ li.slide-current {
 }
 
 .slider-controls {
-  padding:0;
   text-align: center;
   margin-top: 15px;
 }
@@ -563,7 +560,7 @@ footer .footer-nav ul li:hover{
   border-radius: .5em;
   background: #d8d6d6;
   display: inline-block;
-  margin:8px;
+  margin:1% .5%;
   padding-bottom: .8em;
   width: 250px;
   vertical-align: top;
@@ -661,12 +658,14 @@ footer .footer-nav ul li:hover{
 
 /*------Mobile Detail------------------*/
 .mobile-detail{
-  background: #F0EEEE;
+  /*background: #F0EEEE;*/
+  background: #505050;
 }
 
 .mobile-detail article{
   position:relative;
-  background:#D8D6D6;
+  /*background:#D8D6D6;*/
+  background: #363636;
   border-radius: .8em;
   display: inline-block;
   margin:1% .5%;
@@ -692,8 +691,10 @@ footer .footer-nav ul li:hover{
   font-size: 1.8em;
   padding: .5em 0;
   margin: 0;
-  color: #515151;
-  /*text-shadow: -2px -2px 0px #FFF, 2px -2px 0px #FFF, -2px 2px 0px #FFF, 2px 2px 0px #FFF;*/
+  /*color: #515151;*/
+  color:#CFCFCF;
+  /*text-shadow: -2px -2px 0px #FFF, 2px -2px 0px #FFF
+  , -2px 2px 0px #FFF, 2px 2px 0px #FFF;*/
 }
 
 .purchase-data .ranking {
@@ -718,7 +719,8 @@ footer .footer-nav ul li:hover{
   font-size: 1.5em;
   padding: .2em .5em;
   margin: 0;
-  color: #515151;
+  /*color: #515151;*/
+  color:#CFCFCF;
 }
 
 .purchase-options{
@@ -727,7 +729,8 @@ footer .footer-nav ul li:hover{
 
 .purchase-options ul{
   list-style: none;
-  color: #515151;
+  /*color: #515151;*/
+  color: #CFCFCF;
   padding-left:2em; 
   padding-right: .5em; 
   font-size: 1.3em;
@@ -737,11 +740,17 @@ footer .footer-nav ul li:hover{
   padding: 2px 0;
 }
 
+.input-purchase{
+  display:block;
+  text-align: center;
+}
+
 .styled-select select {
+  outline:0;
   background: transparent;
   width: 78px;
   padding: 5px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1;
   border: 0;
   border-radius: 0;
@@ -755,18 +764,18 @@ footer .footer-nav ul li:hover{
   width: 60px;
   height: 41px;
   overflow: hidden;
-  margin:0 0 0 80px;
   background: url(../IMG/List/arrow-down.png) no-repeat right #868686;
 }
 
 .purchase-data button{
-  background: #868686;
+  outline:0;
+  background: #00aca1;
   width: 200px;
   height: 41px;
   border: none;
   margin: 0px 0px 0px -5px;
   vertical-align: top;
-  font-size: 1.3em;
+  font-size: 1.1em;
   transition:background 0.2s ease;
 }
 
@@ -775,7 +784,8 @@ footer .footer-nav ul li:hover{
 }
 
 .mobile-detail-2{
-  background: #D8D6D6;
+  /*background: #D8D6D6;*/
+  background: #363636;
 }
 
 .mobile-detail-2 article{
@@ -799,13 +809,22 @@ footer .footer-nav ul li:hover{
   font-size: 1.1em;
 }
 
-.detail-info table tr td:nth-child(2){
-  color:black;
+.detail-info table tr td:nth-child(2){ 
+  color:#E6E6E6;
   font-size: 1em;
-
 }
 
+.detail-info table tr td:nth-child(2){
+  border-bottom: 1px solid #00C5B9;
+}
 /*--------End Mobile Detail------------*/
+
+/*------Mobile Detail------------------*/
+.sign-up-section{
+  background: #363636;
+}
+
+
 
 /*------------Responsive Design ----------*/
 @media screen and (max-width:768px){
@@ -825,7 +844,7 @@ footer .footer-nav ul li:hover{
     top: 82px;
   }
   .mobile-detail .detail-img , .mobile-detail .purchase-data{
-    padding: 10px;
+    padding:1em 10px;
     margin:1% 0;
     width: 90%;
   }
@@ -881,9 +900,12 @@ footer .footer-nav ul li:hover{
   .main-login input[type="submit"]{
     width: 75%;
   }
-  #container .seller-section h2{
+  #container .seller-section h2, #container .sign-up-section h2{
     font-size:1.8em; 
     padding:0;
+  }
+  #container .sign-up-section h1{
+    font-size: 1.5em;
   }
   #container .system-section h2{
     font-size:1.7em; 
@@ -904,21 +926,33 @@ footer .footer-nav ul li:hover{
     width: 62px;
     padding: 5px;
     font-size: 1em;
-    height: 30px;
+    height: 40px;
   }
   #container .mobile-detail .purchase-data .styled-select{
     width: 45px;
-    height: 30px;
-    margin:0 0 0 60px;
+    height: 40px;
   } 
   #container .mobile-detail .purchase-data button{
-    width: 150px;
-    height: 30px;
+    width: 170px;
+    height: 40px;
     margin: 0 0 0 -4px;
     font-size: 1em;
   }
   .system-section article, .seller-section article{
     width: 290px;
+  }
+  #container .sign-up-section .tab-group li{
+    padding: .5em;
+  }
+  #container .sign-up-section .tab-group li a{
+    font-size: 1em;
+  }
+  #container .sign-up-section .tab-group li span{
+    font-size:1.2em;
+  }
+  #container .sign-up-section .button{
+    padding: 5px 0;
+    font-size: 1.2em;
   }
   footer .footer-nav ul{
     padding:0;
@@ -963,3 +997,154 @@ footer .footer-nav ul li:hover{
   }
 }
 
+/*............SignUp...............*/
+.sign-up-section .form {
+  box-sizing: border-box;
+}
+
+.sign-up-section .form a {
+  text-decoration: none;
+  color: gray;
+  transition:color .5s ease;
+}
+
+.sign-up-section .form a:hover {
+  color: white;
+}
+
+.sign-up-section .form {
+  background: #292929;
+  padding: 2em;
+  max-width: 600px;
+  margin: 1em auto;
+  border-radius: .5em;
+}
+
+.sign-up-section .tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.sign-up-section .tab-group li{
+  margin: 0;
+  display: inline-block;
+  padding: 1em;
+  background: #363636;
+  width: 200px;
+  transition:background .5s ease;
+}
+
+.sign-up-section .tab-group li span{
+  float:right;
+  font-size: 1.5em;
+}
+
+.sign-up-section .tab-group li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.sign-up-section .tab-group li:hover {
+  background: #00C5B9;
+}
+
+.sign-up-section .tab-group .active{
+  background: #00988F;
+}
+
+.sign-up-section .tab-content > div:last-child {
+  display: none;
+}
+
+.sign-up-section .tab-content h1 {
+  color: #CFCFCF;
+  margin: 0 0 40px;
+}
+
+.sign-up-section .tab-content label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 1em;
+}
+
+.sign-up-section .tab-content label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+.sign-up-section .tab-content label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+
+.sign-up-section .tab-content label.active .req {
+  opacity: 0;
+}
+
+.sign-up-section .tab-content label.highlight {
+  color: #ffffff;
+}
+
+.sign-up-section .tab-content input, .sign-up-section .tab-content textarea {
+  font-size: 22px;
+  display: block;
+  width: 95%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.sign-up-section input:focus, .sign-up-section textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+.sign-up-section textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.sign-up-section .field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.sign-up-section .button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 2em;
+  background: #00988f;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+
+.sign-up-section .button:hover, .sign-up-section .button:focus {
+  background: #00C5B9;
+}
+
+.sign-up-section .button-block {
+  display: block;
+  width: 100%;
+}
+
+.sign-up-section .forgot {
+  margin-top: -20px;
+  text-align: right;
+}
